@@ -27,6 +27,18 @@ def test_draw_shape_rectangle():
     assert (perimeter == 300)
 
 
+def test_circle_will_fit():
+    main.circle_will_fit(-120, 0, 50, 0)
+    c = 'blue'
+    assert (c == 'red')
+    x = -120
+    assert (x == -100)
+    y = 0
+    assert (y == 0)
+    l = 50
+    assert (l == 50)
+
+
 def test_setup():
     t.penup()
     t.goto(180, 160)

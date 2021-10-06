@@ -18,16 +18,34 @@ def grid():
         t.right(90)
 
 
-def rectangle_will_fit(x, y, l, h):
-    t.up()
-    t.goto(x, y)
-    t.down()
-
-
 def setup(x, y):
     t.penup()
     t.goto(x, y)
     t.pendown()
+
+
+def rectangle_will_fit(x, y, l, h):
+    t.setup(x, y)
+    if x + l > xmax or x < xmin:
+        print("The shape does not fit horizontally")
+    if y + h > ymax or y < ymin:
+        print("The shape does not fit vertically")
+
+
+def circle_will_fit(x, y, l, h):
+    t.setup(x, y)
+    if x + l > xmax or x < xmin:
+        print("The shape does not fit horizontally")
+    if y + h > ymax or y < ymin:
+        print("The shape does not fit vertically")
+
+
+def triangle_will_fit(x, y, l, h):
+    t.setup(x, y)
+    if x + l > xmax or x < xmin:
+        print("The shape does not fit horizontally")
+    if y + h > ymax or y < ymin:
+        print("The shape does not fit vertically")
 
 
 def draw_shape(shape, c, x, y, l, h=0):
@@ -36,14 +54,11 @@ def draw_shape(shape, c, x, y, l, h=0):
         setup(x, y)
         t.fillcolor(c)
         t.begin_fill()
-        t.forward(l)
-        t.left(90)
-        t.forward(h)
-        t.left(90)
-        t.forward(l)
-        t.left(90)
-        t.forward(h)
-        t.left(90)
+        for i in range(2):
+            t.forward(l)
+            t.left(90)
+            t.forward(h)
+            t.left(90)
         t.end_fill()
 
     elif shape == 'c':
@@ -59,12 +74,9 @@ def draw_shape(shape, c, x, y, l, h=0):
         setup(x, y)
         t.fillcolor(c)
         t.begin_fill()
-        t.forward(l)
-        t.left(120)
-        t.forward(l)
-        t.left(120)
-        t.forward(l)
-        t.end_fill()
+        for i in range(3):
+            t.forward(l)
+            t.left(120)
 
     return perimeter
 
