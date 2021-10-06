@@ -29,8 +29,6 @@ def test_rectangle_will_fit():
 
 def test_circle_will_fit():
     main.circle_will_fit(-120, 0, 50)
-    c = 'blue'
-    assert (c == 'red')
     x = -120
     assert (x == -100)
     y = 0
@@ -40,8 +38,15 @@ def test_circle_will_fit():
 
 
 def test_triangle_will_fit():
-    main.triangle_will_fit(-5, -100, 120)
-
+    main.triangle_will_fit(-5, -100, 120, 50)
+    x = -5
+    assert (x == -5)
+    y = -100
+    assert (y == -100)
+    l = 120
+    assert (l == 110)
+    h = 50
+    assert (h == 50)
 
 
 def test_setup():

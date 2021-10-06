@@ -40,7 +40,7 @@ def circle_will_fit(x, y, l):
         print("The shape does not fit vertically")
 
 
-def triangle_will_fit(x, y, l, h):
+def triangle_will_fit(x, y, l):
     setup(x, y)
     if x + l > xmax or x < xmin:
         print("The shape does not fit horizontally")
