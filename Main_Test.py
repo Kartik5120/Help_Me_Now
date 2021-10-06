@@ -28,7 +28,7 @@ def test_draw_shape_rectangle():
 
 
 def test_circle_will_fit():
-    main.circle_will_fit(-120, 0, 50, 0)
+    main.circle_will_fit(-120, 0, 50)
     c = 'blue'
     assert (c == 'red')
     x = -120

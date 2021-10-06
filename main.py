@@ -25,15 +25,15 @@ def setup(x, y):
 
 
 def rectangle_will_fit(x, y, l, h):
-    t.setup(x, y)
+    setup(x, y)
     if x + l > xmax or x < xmin:
         print("The shape does not fit horizontally")
     if y + h > ymax or y < ymin:
         print("The shape does not fit vertically")
 
 
-def circle_will_fit(x, y, l, h):
-    t.setup(x, y)
+def circle_will_fit(x, y, l):
+    setup(x, y)
     if x + l > xmax or x < xmin:
         print("The shape does not fit horizontally")
     if y + h > ymax or y < ymin:
@@ -41,7 +41,7 @@ def circle_will_fit(x, y, l, h):
 
 
 def triangle_will_fit(x, y, l, h):
-    t.setup(x, y)
+    setup(x, y)
     if x + l > xmax or x < xmin:
         print("The shape does not fit horizontally")
     if y + h > ymax or y < ymin:
