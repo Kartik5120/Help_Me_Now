@@ -30,6 +30,7 @@ def rectangle_will_fit(x, y, l, h):
         print("The shape does not fit horizontally")
     if y + h > ymax or y < ymin:
         print("The shape does not fit vertically")
+    # This function is used to check whether the rectangle is inside the box or not
 
 
 def circle_will_fit(x, y, l):
@@ -38,6 +39,7 @@ def circle_will_fit(x, y, l):
         print("The shape does not fit horizontally")
     if y + h > ymax or y < ymin:
         print("The shape does not fit vertically")
+    # This function is used to check whether the circle is inside the box or not
 
 
 def triangle_will_fit(x, y, l, h):
@@ -46,6 +48,7 @@ def triangle_will_fit(x, y, l, h):
         print("The shape does not fit horizontally")
     if y + h > ymax or y < ymin:
         print("The shape does not fit vertically")
+    # This function is used to check whether the triangle is inside the box or not
 
 
 def draw_shape(shape, c, x, y, l, h=0):
@@ -79,6 +82,7 @@ def draw_shape(shape, c, x, y, l, h=0):
             t.left(120)
 
     return perimeter
+    # This function is defined so as to draw the shape inside the box with the given dimensions
 
 
 def main():

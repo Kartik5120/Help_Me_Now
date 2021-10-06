@@ -15,8 +15,8 @@ def test_draw_shape_rectangle():
     l = 50
     h = 100
     perimeter = l + l + h + h
-    # perimeter when calculated should be equal to 2(50)+2(100) = 300
     assert (perimeter == 300)
+    # perimeter when calculated should be equal to 2(50)+2(100) = 300
 
 
 def test_rectangle_will_fit():
