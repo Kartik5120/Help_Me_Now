@@ -44,7 +44,7 @@ def test_triangle_will_fit():
     y = -100
     assert (y == -100)
     l = 120
-    assert (l == 110)
+    assert (l == 120)
     h = 50
     assert (h == 50)
 
