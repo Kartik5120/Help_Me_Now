@@ -4,14 +4,6 @@ import main
 t = turtle.Turtle()
 
 
-def test_rectangle_will_fit():
-    main.rectangle_will_fit(200, 400, 100, 50) == 2
-    x = 200
-    assert (x == 200)
-    y = 40
-    assert (y == 40)
-
-
 def test_draw_shape_rectangle():
     main.draw_shape('r', 'red', 50, 80, 50, 100)
     c = 'red'
@@ -27,6 +19,14 @@ def test_draw_shape_rectangle():
     assert (perimeter == 300)
 
 
+def test_rectangle_will_fit():
+    main.rectangle_will_fit(200, 400, 100, 50)
+    x = 200
+    assert (x == 200)
+    y = 40
+    assert (y == 40)
+
+
 def test_circle_will_fit():
     main.circle_will_fit(-120, 0, 50)
     c = 'blue'
@@ -37,6 +37,11 @@ def test_circle_will_fit():
     assert (y == 0)
     l = 50
     assert (l == 50)
+
+
+def test_triangle_will_fit():
+    main.triangle_will_fit(-5, -100, 120)
+
 
 
 def test_setup():
